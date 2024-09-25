@@ -17,7 +17,7 @@ public class C72TriggerButtonPlugin implements FlutterPlugin, ActivityAware, Plu
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-    new EventChannel(flutterPluginBinding.getBinaryMessenger(), "my_keyboard_plugin/event")
+    new EventChannel(flutterPluginBinding.getBinaryMessenger(), "c72_trigger_plugin/event")
         .setStreamHandler(new EventChannel.StreamHandler() {
           @Override
           public void onListen(Object arguments, EventSink events) {
